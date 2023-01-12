@@ -23,18 +23,18 @@
     <h1 id="title">Type a message you would like to pass.</h1>
 
     <!-- form -->
-    <form action="#" autocomplete="off" name="messageForm" id="messageForm">
+    <form autocomplete="off" id="messageForm" name="messageForm">
       <!-- label is for form elements; accessible for screen-reader -->
       <label for="message">Type message here:</label></label>
       <!-- label's for='' attribute equals the input's id='' attribute -->
-      <input type="text" id="message" name="message" form="messageForm" required>
+      <input type="text" id="message" name="message" form="messageForm"  required>
       <br>
       <!-- submit button -->
-      <input type="submit" value="Submit" id="submit">
+      <button type="button" id="submit">Submit</button>
     </form>
 
     <!-- message display -->
-    <span id="messageDisplay">Your message will appear here!</span>
+    <span id="messageDisplay"></span>
   </div>
 </body>
 </html>
