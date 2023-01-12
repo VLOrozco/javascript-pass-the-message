@@ -18,24 +18,23 @@
   <script src="./main.js" defer></script>
 </head>
 <body>
-  <!-- body title -->
-  <h1 id="title">Type a message you would like to pass.</h1>
+  <div id="message-container">
+    <!-- body title -->
+    <h1 id="title">Type a message you would like to pass.</h1>
 
-  <!-- form -->
-  <form action="#" autocomplete="off" name="messageForm" id="messageForm" novalidate>
+    <!-- form -->
+    <form action="#" autocomplete="off" name="messageForm" id="messageForm" novalidate>
+      <!-- label is for form elements; accessible for screen-reader -->
+      <label for="message">Type message here:</label>
+      <!-- label's for='' attribute equals the input's id='' attribute -->
+      <input type="text" id="message" name="message" form="messageForm" required>
 
-    <!-- label is for form elements; accessible for screen-reader -->
-    <label for="message">Type message here:</label>
-    <!-- label's for='' attribute equals the input's id='' attribute -->
-    <input type="text" id="message" name="message" form="messageForm" required>
+      <!-- submit button -->
+      <input type="submit" value="Submit">
+    </form>
 
-    <!-- submit button -->
-    <input type="submit" value="Submit">
-
-  </form>
-
-  <!-- message display -->
-  <span id="message">Your message will appear here!</span>
-
+    <!-- message display -->
+    <span id="message">Your message will appear here!</span>
+  </div>
 </body>
 </html>
