@@ -11,7 +11,7 @@
   <!-- favicon -->
   <link rel="icon" type="image/x-icon" href="./envelope-open-text-solid.svg">
   <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Moon+Dance&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- link styles.css -->
   <link rel="stylesheet" href="./styles.css">
   <!-- src main.js -->
@@ -23,12 +23,12 @@
     <h1 id="title">Type a message you would like to pass.</h1>
 
     <!-- form -->
-    <form action="#" autocomplete="off" name="messageForm" id="messageForm" novalidate>
+    <form action="#" autocomplete="off" name="messageForm" id="messageForm">
       <!-- label is for form elements; accessible for screen-reader -->
-      <label for="message">Type message here:</label>
+      <label for="message">Type message here:</label></label>
       <!-- label's for='' attribute equals the input's id='' attribute -->
       <input type="text" id="message" name="message" form="messageForm" required>
-
+      <br>
       <!-- submit button -->
       <input type="submit" value="Submit" id="submit">
     </form>
