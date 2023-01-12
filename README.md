@@ -6,8 +6,6 @@
   - [Table of Contents](#table-of-contents)
   - [General Information](#general-information)
   - [Screenshots](#screenshots)
-    - [Mobile view](#mobile-view)
-    - [Desktop view](#desktop-view)
   - [Technologies](#technologies)
   - [Site Link](#site-link)
   - [What I Learned](#what-i-learned)
@@ -19,17 +17,13 @@
 ## General Information
 
 This is Project #3 from [100+ JavaScript Projects for Beginners!](https://jsbeginners.com/pass-the-message-project/)
-In this challenge you must select the input element's value from the DOM, when you click the “Submit” button your message inputted in the form will be visible in the “Last Message Delivered” Section.
+In this challenge you must select the input element's value from the DOM, when you click the “Submit” button your message inputted in the form will be visible in the “Last Message Delivered” Section. In addition to the challenge, I added a reset to clear the form after clicking submit and the message input section features a submit button by pressing down on the "Enter" key.
 
 ## Screenshots
 
-### Mobile view
+![screenshot site](./screenshot.png)
 
-![Screenshot of site in mobile view](./images/mobile-view.png)
-
-### Desktop view
-
-![Screenshot of site in desktop view](./images/desktop-view.png)
+![screenshot site with quote for message](./screenshot-quote-message.png)
 
 ## Technologies
 
@@ -43,11 +37,24 @@ In this challenge you must select the input element's value from the DOM, when y
 
 ## What I Learned
 
-...
+While completing this project, I realized that my message would not submit when I pressed enter. This project led me to search and use the `keypress` JS HTML DOM Event to check if the KeyboardEvent `.key` property is equal to `"Enter"`.
+
+```js
+// Execute a function when the user presses the "Enter" key on the keyboard
+message.addEventListener('keypress', function(event){
+   // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter"){
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the submit button element with a click
+    submit.click();
+  }
+});
+```
 
 ## Continued Learning
 
-...
+I look forward to creating more JavaScript projects and building my skills. Happy coding everyone!
 
 ## Author
 
